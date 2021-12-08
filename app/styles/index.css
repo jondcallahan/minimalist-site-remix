@@ -1,0 +1,79 @@
+main {
+  min-height: 100vh;
+  display: flex;
+}
+
+article {
+  width: 50ch;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  margin: 1em auto 0;
+  border-radius: 4px;
+  /* Placeholder while image loads */
+  background-size: cover;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj48ZmlsdGVyIGlkPSJiIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxMiIgLz48L2ZpbHRlcj48cGF0aCBmaWxsPSIjYWNhY2FjIiBkPSJNMCAwaDQwMHY0MDBIMHoiLz48ZyBmaWx0ZXI9InVybCgjYikiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC44IC44KSBzY2FsZSgxLjU2MjUpIiBmaWxsLW9wYWNpdHk9Ii41Ij48ZWxsaXBzZSBjeD0iNjIiIGN5PSIyNTAiIHJ4PSI2OCIgcnk9IjY4Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTI3MSAyMzdMMjUxLTE2IDEyNCAxMjV6Ii8+PGVsbGlwc2Ugcng9IjEiIHJ5PSIxIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTYwLjUgNTYuMyAyMC43KSBzY2FsZSgyNy40NzI1MyA1Mi4zOTMwNSkiLz48ZWxsaXBzZSBmaWxsPSIjMjgyODI4IiBjeD0iMTg5IiBjeT0iMjMyIiByeD0iNDYiIHJ5PSI0NiIvPjxlbGxpcHNlIHJ4PSIxIiByeT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEyLjQwMTggLTEwLjg1MzcyIDM2Ljg5MDg4IC00Mi4xNTI2OCA5NS40IDE2NCkiLz48ZWxsaXBzZSBmaWxsPSIjZmZmIiByeD0iMSIgcnk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KC01My44MDYwNiAtMjIyLjQwNzYyIDQwLjAzODQ5IC05LjY4NjMzIDIwNS4zIDE1LjQpIi8+PGVsbGlwc2UgZmlsbD0iI2ZjZmNmYyIgY3g9IjIwIiBjeT0iMTMxIiByeD0iNjEiIHJ5PSI2MSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMDkuNiA1My43bDQ5LjgtNC4zIDMgMzQuOS00OS44IDQuM3oiLz48L2c+PC9zdmc+);
+  /* Hide alt text*/
+  color: transparent;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 1rem auto 0.5rem;
+}
+
+.subheader {
+  margin: 0 auto 0.5em;
+}
+
+.bio {
+  margin: 0.5em auto 2em;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em auto;
+  width: 33%;
+  min-width: 250px;
+}
+
+.icon {
+  width: 1em;
+  stroke-width: 0;
+  stroke: #2e2e2e;
+  fill: #2e2e2e;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #2e2e2e;
+}
+
+@media only screen and (min-width: 900px) and (min-height: 800px) {
+  main {
+    box-shadow: inset 0 0 0 40px #fff;
+    padding: 40px;
+    height: calc(100vh - 80px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .bio {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+  }
+  main {
+    position: initial;
+    box-shadow: unset;
+  }
+}
