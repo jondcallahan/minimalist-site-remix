@@ -1,3 +1,7 @@
+:root {
+  --body-border-color: #fff;
+}
+
 main {
   min-height: 100vh;
   display: flex;
@@ -45,19 +49,19 @@ h1 {
 .icon {
   width: 1em;
   stroke-width: 0;
-  stroke: #2e2e2e;
-  fill: #2e2e2e;
+  stroke: var(--body-text-color);
+  fill: var(--body-text-color);
 }
 
 a,
 a:visited,
 a:hover {
-  color: #2e2e2e;
+  color: var(--body-text-color);
 }
 
 @media only screen and (min-width: 900px) and (min-height: 800px) {
   main {
-    box-shadow: inset 0 0 0 40px #fff;
+    box-shadow: inset 0 0 0 40px var(--body-border-color);
     padding: 40px;
     height: calc(100vh - 80px);
   }

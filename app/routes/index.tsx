@@ -1,6 +1,7 @@
 import type { MetaFunction, LinksFunction } from "remix";
 
 import stylesUrl from "~/styles/index.css";
+import darkStylesUrl from "~/styles/index.dark.css";
 // https://remix.run/api/conventions#meta
 export let meta: MetaFunction = () => {
   return {
@@ -12,6 +13,11 @@ export let meta: MetaFunction = () => {
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesUrl },
+  {
+    rel: "stylesheet",
+    href: darkStylesUrl,
+    media: "(prefers-color-scheme: dark)",
+  },
 ];
 
 // https://remix.run/guides/routing#index-routes
@@ -81,11 +87,6 @@ export default function Index() {
             </svg>
           </a>
         </section>
-        {/* <section className="links">
-            <Link href="/books">
-              <a>Notes on books I've read</a>
-            </Link>
-          </section> */}
       </article>
     </main>
   );
