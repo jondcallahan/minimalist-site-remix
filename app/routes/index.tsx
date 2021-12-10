@@ -1,7 +1,7 @@
 import type { MetaFunction, LinksFunction } from "remix";
 
-import stylesUrl from "~/styles/index.css";
-import darkStylesUrl from "~/styles/index.dark.css";
+import openPropStyles from "../styles/index.openprops.css";
+
 // https://remix.run/api/conventions#meta
 export let meta: MetaFunction = () => {
   return {
@@ -12,12 +12,7 @@ export let meta: MetaFunction = () => {
 };
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesUrl },
-  {
-    rel: "stylesheet",
-    href: darkStylesUrl,
-    media: "(prefers-color-scheme: dark)",
-  },
+  { rel: "stylesheet", href: openPropStyles },
 ];
 
 // https://remix.run/guides/routing#index-routes
