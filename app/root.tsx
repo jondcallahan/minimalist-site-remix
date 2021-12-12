@@ -108,7 +108,8 @@ function Document({
       </head>
       <body>
         {children}
-        <Scripts />
+        {/* Since there is only one page, there is no benefit to including the Scripts. If other pages are added, add the Scripts back in */}
+        {/* <Scripts /> */}
         {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>

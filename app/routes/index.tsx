@@ -1,6 +1,5 @@
 import type { MetaFunction, LinksFunction } from "remix";
-
-import openPropStyles from "../styles/index.openprops.css";
+import openPropStyles from "../styles/bundled/open-props-styles.css";
 
 // https://remix.run/api/conventions#meta
 export let meta: MetaFunction = () => {
